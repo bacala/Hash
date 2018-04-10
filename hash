@@ -1,0 +1,7 @@
+class Hash
+   def slice(*ops)
+     self.select do |k,v|
+       ops.include? k
+     end
+   end
+end
